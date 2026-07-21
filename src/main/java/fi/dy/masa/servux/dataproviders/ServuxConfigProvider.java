@@ -54,6 +54,9 @@ public class ServuxConfigProvider extends DataProviderBase
         }
     };
     private final ServuxBoolSetting debugLog = new ServuxBoolSetting(this, "debug_log", Component.nullToEmpty("Debug Log"), Component.nullToEmpty("Enable debug logging"), false);
+	
+    private final ServuxBoolSetting sendBulkNbtFeedback = new ServuxBoolSetting(this, "send_bulk_nbt_feedback", Component.nullToEmpty("Send Bulk NBT Feedback"), Component.nullToEmpty("Enable Bulk NBT Data delivery acknowledgement chat messages"), true);
+
     private final List<IServuxSetting<?>> settings = List.of(
             this.basePermissionLevel, this.adminPermissionLevel,
             this.easyPlacePermissionLevel, this.easyPlaceValidatorEnabled,
