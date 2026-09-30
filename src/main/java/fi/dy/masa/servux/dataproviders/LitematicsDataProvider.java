@@ -329,12 +329,12 @@ public class LitematicsDataProvider extends DataProviderBase
             long timeElapsed = System.currentTimeMillis() - timeStart;
 
             HANDLER.encodeServerData(player, ServuxLitematicaPacket.ResponseS2CStart(output));
-            player.sendMessage(
+            /* player.sendMessage(
                     StringUtils.translate("servux.litematics.feedback.bulk_request.acknowledge",
                                           world.getDimensionEntry().getIdAsString(), chunkPos.toString(),
                                           tileList.size(), entityList.size(),
                                           timeElapsed), false
-            );
+            ); */
         }
     }
 
